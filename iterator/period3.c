@@ -3,15 +3,15 @@
 
 static void doSomeThing(struct TimePeriod *Period)
 {
-    struct Period2 *period2 = container_of(Period, typeof(*period2), period);
+    struct Period3 *period3 = container_of(Period, typeof(*period3), period);
     printf("do period3 !\n");
 
 }
 
-void initPeriod3(struct Period3 *Period2)
+void initPeriod3(struct Period3 *Period)
 {
 
-    initTimePeriod(&Period2->period);
+    initTimePeriod(&Period->period);
 
     Period2->period.doSomeThing = doSomeThing;
 }
