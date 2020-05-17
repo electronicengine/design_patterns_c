@@ -3,6 +3,7 @@
 
 static void doSomeThing(struct TimePeriod *Period)
 {
+    struct Period1 *period1 = container_of(Period, typeof(*period1), period);
     printf("do period1 !\n");
 
 }
