@@ -5,6 +5,8 @@
 
 static void update(struct Observer *Obs)
 {
+    struct Listener2 *listener = container_of(Obs, typeof(*listener), observer);
+
     int state;
 
     Obs->model->getState(Obs->model, &state);
