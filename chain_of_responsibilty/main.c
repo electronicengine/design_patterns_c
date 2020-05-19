@@ -9,6 +9,8 @@ int main()
 
     initStarter(&starter);
 
+    starter.createChain(&starter);
+
     starter.startChain(&starter);
 
     return 0;

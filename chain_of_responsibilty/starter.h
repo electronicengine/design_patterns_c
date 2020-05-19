@@ -24,7 +24,9 @@ struct Starter
     struct Handler2 handler2;
     struct Handler3 handler3;
 
+    void (*createChain)(struct Starter *Start);
     void (*startChain)(struct Starter *Start);
+
 };
 
 void initStarter(struct Starter *Start);

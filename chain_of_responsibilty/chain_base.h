@@ -19,7 +19,6 @@ struct ChainBase
 
     void (*handle)(struct ChainBase *Base);
     void (*addChain)(struct ChainBase *Base, struct ChainBase *NextChain);
-    void (*setNext)(struct ChainBase *Base, struct ChainBase *NextChain);
 
     struct ChainBase *next_chain;
 
